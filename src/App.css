@@ -1,4 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
 .container {
   max-width: 1080px;
   margin: 20px auto;
+}
+
+.title {
+  font-family: 'Dosis', sans-serif;
+  font-size: 50px;
+}
+
+.main-title {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  padding-bottom: 10px;
 }
