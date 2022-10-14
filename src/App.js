@@ -1,9 +1,9 @@
 import "./App.css";
 import CurrentWeather from "./components/current-weather/CurrentWeather";
 import Search from "./components/search/Search";
+import Forecast from "./components/forecast/Forecast";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./api";
 import { useState } from "react";
-import Forecast from "./components/forecast/Forecast";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
