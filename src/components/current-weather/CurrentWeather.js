@@ -2,7 +2,7 @@ import "./CurrentWeather.css";
 
 const CurrentWeather = ({ data }) => {
   return (
-    <div className="weather">
+    <div data-testid="currentWeather" className="weather">
       <div className="top">
         <div>
           <p className="city"> {data.city} </p>
