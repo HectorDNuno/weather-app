@@ -16,3 +16,9 @@
   font-size: 70px;
   padding-bottom: 10px;
 }
+
+@media (max-width: 501px) {
+  .main-title {
+    font-size: 60px;
+  }
+ }
