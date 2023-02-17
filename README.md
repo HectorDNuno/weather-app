@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# What Weather!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![project screenshot](https://github.com/HectorDNuno/weather-app/blob/main/public/weather-app-screenshot.png?raw=true)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Hello and welcome to my weather app! The purpose of this web app is pretty self explanitory. I built this app using React.js, [react-accessible-accordion](https://www.npmjs.com/package/react-accessible-accordion), and [react-select-async-paginate](https://www.npmjs.com/package/react-select-async-paginate). I get my data with a combination of two APIs: [OpenWeather](https://openweathermap.org/) and [GeoDB Cities](https://rapidapi.com/wirefreethought/api/geodb-cities/details).
 
-### `npm start`
+I use react-select-async-paginate for the search bar, and I make a call to GeoDB Cities API to get a list of cities that match what is typed in the search bar. The suggested cities show up as options in the search bar. When a city is selected, I receive the latitude and longitude of that city and send that data to the OpenWeather API. OpenWeather then does two things with that data: it gets the current weather and the forecast for that city. I created two variables that have fetch requests for the current weather and the forecast. I passed an array of those promises to OpenWeather and, using the useState hook, I update the current weather and forecast variables. I created two components that display the data on the page, one for each set of data. The current weather data goes to the widget that is under the search bar, and the forecast data is sent to he accordion that is under the current weather widget. I map through the forcast data in combination with the react-accessible-accordion to create each item in the accordion. Voilà we have a working weather app!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can check out the demo I made [here](https://youtu.be/bLO1_F6Rggg).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Dependencies
 
-### `npm test`
+react-accessible-accordion
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+$ npm install react-accessible-accordion
+```
 
-### `npm run build`
+react-select-async-paginate
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+$ npm install react-select-async-paginate
+```
