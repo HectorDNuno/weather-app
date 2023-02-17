@@ -1,6 +1,6 @@
 # What Weather!
 
-![project screenshot](https://github.com/HectorDNuno/weather-app/blob/main/public/weather-app-screenshot.png?raw=true)
+![project screenshot](https://github.com/HectorDNuno/weather-app/blob/main/public/project-screenshot.png?raw=true)
 
 ## Description
 
